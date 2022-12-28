@@ -1,0 +1,17 @@
+[Match]
+Name=en*
+
+[Network]
+DHCP=yes
+MulticastDNS=yes
+IPForward=yes
+
+[DHCPv4]
+UseDNS=yes
+UseDomains=yes
+
+[IPv6AcceptRA]
+UseDomains=yes
+
+[Link]
+Multicast=yes

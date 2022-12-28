@@ -1,0 +1,21 @@
+# /dev/mapper/m2-root--arch
+UUID=88373b61-cccb-47a6-a2e4-c4b0b3faa8bf	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# efivarfs
+efivarfs            	/sys/firmware/efi/efivars	efivarfs  	rw,nosuid,nodev,noexec,relatime	0 0
+
+# cgroup
+cgroup              	/sys/fs/cgroup/unified	cgroup2   	rw,nosuid,nodev,noexec,relatime,nsdelegate	0 0
+
+# /dev/sda2
+UUID=42b1a853-a1b1-4748-b5bf-d4acce38f265	/boot     	ext2      	rw,relatime,block_validity,barrier,user_xattr,acl	0 2
+
+# /dev/sda1
+UUID=91B8-B769      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/mapper/m2-home
+UUID=a8e47249-2166-44ff-afe4-157a04d9009d	/home     	ext4      	rw,relatime,data=ordered	0 2
+
+# /dev/mapper/m2-swap
+UUID=771a90ce-13ce-4955-81b0-7c20156dd0e9	none      	swap      	defaults	0 0
+

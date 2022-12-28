@@ -1,0 +1,12 @@
+[DEFAULT]
+bantime = 1d
+
+[sshd]
+enabled  = true
+filter   = sshd
+action   = iptables
+backend  = systemd
+maxretry = 10
+findtime = 1d
+bantime  = 2w
+ignoreip = 127.0.0.1/8 192.168.0.0/16

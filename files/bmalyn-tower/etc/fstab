@@ -1,0 +1,22 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/VolGroupArray-root--arch
+UUID=cbf3b9ac-06bb-4993-b2bc-ba9997521d12	/         	ext4      	rw,relatime	0 1
+
+# /dev/mapper/VolGroupArray-home
+UUID=6291c438-5a10-49b7-8486-0e2f80c48e93	/home     	ext4      	rw,relatime	0 2
+
+# /dev/md/efi
+UUID=DFE5-F996      	/efi      	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/nvme1n1p2
+UUID=884e153e-b766-46ba-a206-f66485ef5609	none      	swap      	defaults  	0 0
+
+# /dev/nvme0n1p2
+UUID=225c0928-a8af-4a92-b2ce-4ca45dc387e5	none      	swap      	defaults  	0 0
+
+# /efi/EFI/arch
+/efi/EFI/arch   	/boot     	none      	rw,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro,bind	0 0
+
