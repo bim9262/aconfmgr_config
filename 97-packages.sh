@@ -11,6 +11,7 @@ AddPackage --foreign extramaus # workaround to always show mouse cursor under x1
 AddPackage --foreign fpaste # A cli frontend for the fpaste.org pastebin
 AddPackage --foreign git-gone # Prune stale local Git branches
 AddPackage --foreign google-chrome # The popular and trusted web browser by Google (Stable Channel)
+AddPackage --foreign grimshot # A helper for screenshots within sway.
 AddPackage --foreign ly-reloaded-git # Maintained fork of the Ly TUI display manager
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
 AddPackage --foreign obs-v4l2sink # v4l2 output for obs-studio
@@ -233,9 +234,18 @@ AddPackage zsh # A very advanced and programmable command interpreter (shell) fo
 
 
 if [[ "$HOSTNAME" == bmalyn-tower ]]; then
+    AddPackage --foreign linux-xanmod # The Linux kernel and modules with Xanmod patches
+    AddPackage --foreign linux-xanmod-headers # Headers and scripts for building modules for the Linux Xanmod - Current Stable (CURRENT) kernel
+    AddPackage --foreign linux-xanmod-rt # The Linux kernel and modules with Xanmod patches
+    AddPackage --foreign linux-xanmod-rt-headers # Headers and scripts for building modules for the Linux Xanmod real-time version kernel
+    AddPackage --foreign linux-xanmod-tt # The Linux kernel and modules with Xanmod patches
+    AddPackage --foreign linux-xanmod-tt-headers # Headers and scripts for building modules for the Linux Xanmod. Development branch with the Task Type CPU Scheduler by Hamad Al Marri kernel
     # Octoprint is not installing on bmalyn-yoga for some reason so it's here for now...
     AddPackage --foreign octoprint-venv # Web interface for 3D printers (venv installation type)
     AddPackage --foreign openrgb-git # Configuration utility for RGB lights supporting motherboards, RAM, & peripherals
+    AddPackage linux-zen # The Linux ZEN kernel and modules
+    AddPackage linux-zen-headers # Headers and scripts for building modules for the Linux ZEN kernel
+
 elif [[ "$HOSTNAME" == bmalyn-yoga ]]; then
     AddPackage --foreign mkchromecast # Cast Audio/Video to your Google Cast and Sonos Devices
 fi
