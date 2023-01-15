@@ -15,6 +15,7 @@ AddPackage --foreign grimshot # A helper for screenshots within sway.
 AddPackage --foreign ly-reloaded-git # Maintained fork of the Ly TUI display manager
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
 AddPackage --foreign obs-v4l2sink # v4l2 output for obs-studio
+AddPackage --foreign octoprint-venv # Web interface for 3D printers (venv installation type)
 AddPackage --foreign pacman-log-orphans-hook # hook to check whether there are any packages marked as unrequired (orphans) via pacman -Qttdq after every pacman run
 AddPackage --foreign pacmods # Tool to show changes to system config files
 AddPackage --foreign pacserve # Easily share Pacman packages between computers. A replacement for PkgD.
@@ -240,8 +241,6 @@ if [[ "$HOSTNAME" == bmalyn-tower ]]; then
     AddPackage --foreign linux-xanmod-rt-headers # Headers and scripts for building modules for the Linux Xanmod real-time version kernel
     AddPackage --foreign linux-xanmod-tt # The Linux kernel and modules with Xanmod patches
     AddPackage --foreign linux-xanmod-tt-headers # Headers and scripts for building modules for the Linux Xanmod. Development branch with the Task Type CPU Scheduler by Hamad Al Marri kernel
-    # Octoprint is not installing on bmalyn-yoga for some reason so it's here for now...
-    AddPackage --foreign octoprint-venv # Web interface for 3D printers (venv installation type)
     AddPackage --foreign openrgb-git # Configuration utility for RGB lights supporting motherboards, RAM, & peripherals
     AddPackage linux-zen # The Linux ZEN kernel and modules
     AddPackage linux-zen-headers # Headers and scripts for building modules for the Linux ZEN kernel

@@ -12,6 +12,7 @@ SystemdEnable fail2ban /usr/lib/systemd/system/fail2ban.service
 SystemdEnable kernel-modules-hook /usr/lib/systemd/system/linux-modules-cleanup.service
 SystemdEnable logrotate /usr/lib/systemd/system/logrotate.timer
 SystemdEnable ly-reloaded-git /usr/lib/systemd/system/ly.service
+SystemdEnable octoprint-venv /usr/lib/systemd/system/octoprint.service
 SystemdEnable openssh /usr/lib/systemd/system/sshd.service
 SystemdEnable pacserve /usr/lib/systemd/system/pacserve.service
 SystemdEnable pcsclite /usr/lib/systemd/system/pcscd.socket
@@ -19,7 +20,3 @@ SystemdEnable smartmontools /usr/lib/systemd/system/smartd.service
 SystemdEnable systemd /usr/lib/systemd/system/remote-fs.target
 SystemdEnable upower /usr/lib/systemd/system/upower.service
 SystemdEnable zeronet-git /usr/lib/systemd/system/zeronet.service
-
-if [[ "$HOSTNAME" == bmalyn-tower ]]; then
-    SystemdEnable octoprint-venv /usr/lib/systemd/system/octoprint.service
-fi
