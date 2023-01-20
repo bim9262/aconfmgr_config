@@ -32,7 +32,6 @@ AddPackage --foreign python38 # Major release 3.8 of the Python high-level progr
 AddPackage --foreign python39 # Major release 3.9 of the Python high-level programming language
 AddPackage --foreign reflector-mirrorlist-update # Use reflector to update mirrorlist when pacman-mirrorlist is updated
 AddPackage --foreign rslsync # Resilio Sync (ex:BitTorrent Sync) - automatically sync files via secure, distributed technology
-AddPackage --foreign spotify # A proprietary music streaming service
 AddPackage --foreign stress-ng # Software to stress test a computer system in various selectable ways
 AddPackage --foreign texlive-latexindent-meta # Meta package to use latexindent
 AddPackage --foreign ttf-font-awesome-4 # 100% free version of font awesome.
