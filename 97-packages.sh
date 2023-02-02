@@ -3,6 +3,7 @@ AddPackage --foreign airshipper # The official launcher for Veloren - an open-wo
 AddPackage --foreign amidst # Advanced Minecraft Interface and Data/Structure Tracking
 AddPackage --foreign audioprism # A spectrogram tool for PulseAudio and WAV files
 AddPackage --foreign bfg # Removes large or troublesome blobs like git-filter-branch does, but faster.
+AddPackage --foreign browserpass-chrome # Chrome extension for Browserpass, browser extension for zx2c4's pass (password manager)
 AddPackage --foreign castlequest-git # Text-based adventure game set in a remote castle somewhere in Eastern Europe.
 AddPackage --foreign cura-bin # State-of-the-art slicer app to prepare your 3D models for your 3D printer
 AddPackage --foreign diction # Diction identifies wordy and commonly misused phrases.
@@ -12,15 +13,19 @@ AddPackage --foreign fpaste # A cli frontend for the fpaste.org pastebin
 AddPackage --foreign git-gone # Prune stale local Git branches
 AddPackage --foreign google-chrome # The popular and trusted web browser by Google (Stable Channel)
 AddPackage --foreign grimshot # A helper for screenshots within sway.
+AddPackage --foreign lssecret-git # utility to list all secret items in a secret service using libsecret
 AddPackage --foreign ly-reloaded-git # Maintained fork of the Ly TUI display manager
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
-AddPackage --foreign obs-v4l2sink # v4l2 output for obs-studio
+# AddPackage --foreign obs-v4l2sink # v4l2 output for obs-studio
 AddPackage --foreign octoprint-venv # Web interface for 3D printers (venv installation type)
 AddPackage --foreign pacman-log-orphans-hook # hook to check whether there are any packages marked as unrequired (orphans) via pacman -Qttdq after every pacman run
 AddPackage --foreign pacmods # Tool to show changes to system config files
 AddPackage --foreign pacserve # Easily share Pacman packages between computers. A replacement for PkgD.
 AddPackage --foreign pandoc-bin # Pandoc - executable only, without 750MB Haskell depends/makedepends
 AddPackage --foreign paru # Feature packed AUR helper
+AddPackage --foreign pass-audit # A pass extension for auditing your password repository.
+AddPackage --foreign pass-tessen # fuzzy data selection and copy-paste from password store
+AddPackage --foreign pass-update # A pass extension that provides an easy flow for updating passwords.
 AddPackage --foreign plymouth-git # A graphical boot splash screen with kernel mode-setting support (Development version)
 AddPackage --foreign powerline-fonts-git # Patched fonts for Powerline users
 AddPackage --foreign processing # Programming environment for creating images, animations and interactions
@@ -32,6 +37,7 @@ AddPackage --foreign python38 # Major release 3.8 of the Python high-level progr
 AddPackage --foreign python39 # Major release 3.9 of the Python high-level programming language
 AddPackage --foreign reflector-mirrorlist-update # Use reflector to update mirrorlist when pacman-mirrorlist is updated
 AddPackage --foreign rslsync # Resilio Sync (ex:BitTorrent Sync) - automatically sync files via secure, distributed technology
+AddPackage --foreign sndcpy-bin # Android audio forwarding (scrcpy, but for audio)
 AddPackage --foreign stress-ng # Software to stress test a computer system in various selectable ways
 AddPackage --foreign texlive-latexindent-meta # Meta package to use latexindent
 AddPackage --foreign ttf-font-awesome-4 # 100% free version of font awesome.
@@ -66,6 +72,7 @@ AddPackage binutils # A set of programs to assemble and manipulate binary and ob
 AddPackage bison # The GNU general-purpose parser generator
 AddPackage blender # A fully integrated 3D graphics creation suite
 AddPackage brightnessctl # Lightweight brightness control tool
+AddPackage browserpass # Native host app for Browserpass, browser extension for zx2c4's pass (password manager)
 AddPackage btfs # A bittorrent filesystem based on FUSE
 AddPackage ca-certificates-mozilla # Mozilla's set of trusted CA certificates
 AddPackage caja # File manager for the MATE desktop
@@ -90,6 +97,7 @@ AddPackage filezilla # Fast and reliable FTP, FTPS and SFTP client
 AddPackage firefox # Standalone web browser from mozilla.org
 AddPackage flatpak # Linux application sandboxing and distribution framework (formerly xdg-app)
 AddPackage flex # A tool for generating text-scanning programs
+AddPackage fzf # Command-line fuzzy finder
 AddPackage gcc # The GNU Compiler Collection - C and C++ frontends
 AddPackage gdb # The GNU Debugger
 AddPackage gimp # GNU Image Manipulation Program
@@ -154,6 +162,7 @@ AddPackage openssh # SSH protocol implementation for remote login, command execu
 AddPackage openxr # An open standard for virtual reality and augmented reality platforms and devices
 AddPackage os-prober # Utility to detect other OSes on a set of drives
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
+AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pastebinit # Send anything you want directly to a pastebin from the command line
 AddPackage patch # A utility to apply patch files to original sources
 AddPackage pavucontrol # PulseAudio Volume Control
@@ -171,6 +180,7 @@ AddPackage python-pylint # Analyzes Python code looking for bugs and signs of po
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-xlrd # Library for developers to extract data from Excel spreadsheet files
 AddPackage qt5-wayland # Provides APIs for Wayland
+AddPackage qtpass # A multi-platform GUI for pass
 AddPackage realtime-privileges # Realtime privileges for users
 AddPackage rebuild-detector # Detects which packages need to be rebuilt
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
@@ -234,13 +244,7 @@ AddPackage zsh # A very advanced and programmable command interpreter (shell) fo
 
 
 if [[ "$HOSTNAME" == bmalyn-tower ]]; then
-    AddPackage --foreign linux-xanmod # The Linux kernel and modules with Xanmod patches
-    AddPackage --foreign linux-xanmod-headers # Headers and scripts for building modules for the Linux Xanmod - Current Stable (CURRENT) kernel
-    AddPackage --foreign linux-xanmod-rt # The Linux kernel and modules with Xanmod patches
-    AddPackage --foreign linux-xanmod-rt-headers # Headers and scripts for building modules for the Linux Xanmod real-time version kernel
-    AddPackage --foreign linux-xanmod-tt # The Linux kernel and modules with Xanmod patches
-    AddPackage --foreign linux-xanmod-tt-headers # Headers and scripts for building modules for the Linux Xanmod. Development branch with the Task Type CPU Scheduler by Hamad Al Marri kernel
-    AddPackage --foreign openrgb-git # Configuration utility for RGB lights supporting motherboards, RAM, & peripherals
+    AddPackage --foreign openrgb # Open source RGB lighting control that doesn't depend on manufacturer software.
     AddPackage linux-zen # The Linux ZEN kernel and modules
     AddPackage linux-zen-headers # Headers and scripts for building modules for the Linux ZEN kernel
 

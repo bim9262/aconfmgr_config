@@ -5,7 +5,7 @@ BMALYN_GID=1000
 BMALYN_HOME=/home/bmalyn
 
 if [[ "$HOSTNAME" == bmalyn-tower ]]; then
-    GRUB_DEFAULT='gnulinux-linux-advanced-cbf3b9ac-06bb-4993-b2bc-ba9997521d12'
+    GRUB_DEFAULT='gnulinux-linux-zen-advanced-cbf3b9ac-06bb-4993-b2bc-ba9997521d12'
     GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash vt.global_cursor_default=0"
     GRUB_PRELOAD_MODULES="part_gpt part_msdos"
     GRUB_ENABLE_CRYPTODISK=n

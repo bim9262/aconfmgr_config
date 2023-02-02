@@ -75,5 +75,3 @@ EOF
 
 # These are just the default files, that we don't modify
 GetPackageOriginalFile pambase /etc/pam.d/system-auth > /dev/null
-GetPackageOriginalFile sudo /etc/sudoers > /dev/null
-
