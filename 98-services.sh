@@ -11,7 +11,6 @@ SystemdEnable --type user xdg-user-dirs /usr/lib/systemd/user/xdg-user-dirs-upda
 SystemdEnable fail2ban /usr/lib/systemd/system/fail2ban.service
 SystemdEnable kernel-modules-hook /usr/lib/systemd/system/linux-modules-cleanup.service
 SystemdEnable logrotate /usr/lib/systemd/system/logrotate.timer
-SystemdEnable ly-reloaded-git /usr/lib/systemd/system/ly.service
 SystemdEnable octoprint-venv /usr/lib/systemd/system/octoprint.service
 SystemdEnable openssh /usr/lib/systemd/system/sshd.service
 SystemdEnable pacserve /usr/lib/systemd/system/pacserve.service

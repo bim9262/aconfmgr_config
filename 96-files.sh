@@ -37,11 +37,6 @@ set /files/etc/pam.d/sshd/04/argument no_increment_hotp
 save
 EOF
 
-
-f="$(GetPackageOriginalFile ly-reloaded-git /etc/ly/config.ini)"
-sed -ri "s/^#(animate = true|animation|blank_password = true)/\1/g" "$f"
-set_variable "animation" "=" "1" "$f"
-
 f="$(GetPackageOriginalFile pacman /etc/makepkg.conf)"
 sed -ri "s/^#(MAKEFLAGS)/\1/g" "$f"
 set_variable "MAKEFLAGS" "=" '"-j$(nproc)"' "$f"

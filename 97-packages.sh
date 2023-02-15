@@ -13,15 +13,14 @@ AddPackage --foreign fpaste # A cli frontend for the fpaste.org pastebin
 AddPackage --foreign git-gone # Prune stale local Git branches
 AddPackage --foreign google-chrome # The popular and trusted web browser by Google (Stable Channel)
 AddPackage --foreign grimshot # A helper for screenshots within sway.
+AddPackage --foreign libretro-beetle-psx-git # Sony PlayStation core
 AddPackage --foreign lssecret-git # utility to list all secret items in a secret service using libsecret
-AddPackage --foreign ly-reloaded-git # Maintained fork of the Ly TUI display manager
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
 # AddPackage --foreign obs-v4l2sink # v4l2 output for obs-studio
 AddPackage --foreign octoprint-venv # Web interface for 3D printers (venv installation type)
 AddPackage --foreign pacman-log-orphans-hook # hook to check whether there are any packages marked as unrequired (orphans) via pacman -Qttdq after every pacman run
 AddPackage --foreign pacmods # Tool to show changes to system config files
 AddPackage --foreign pacserve # Easily share Pacman packages between computers. A replacement for PkgD.
-AddPackage --foreign pandoc-bin # Pandoc - executable only, without 750MB Haskell depends/makedepends
 AddPackage --foreign paru # Feature packed AUR helper
 AddPackage --foreign pass-audit # A pass extension for auditing your password repository.
 AddPackage --foreign pass-tessen # fuzzy data selection and copy-paste from password store
@@ -66,6 +65,7 @@ AddPackage autoconf # A GNU tool for automatically configuring source code
 AddPackage automake # A GNU tool for automatically creating Makefiles
 AddPackage autopep8 # A tool that automatically formats Python code to conform to the PEP 8 style guide
 AddPackage base # Minimal package set to define a basic Arch Linux installation
+AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage bat # Cat clone with syntax highlighting and git integration
 AddPackage bind # A complete, highly portable implementation of the DNS protocol
 AddPackage binutils # A set of programs to assemble and manipulate binary and object files
@@ -83,9 +83,11 @@ AddPackage debuginfod # Handle ELF object files and DWARF debugging information 
 AddPackage devtools # Tools for Arch Linux package maintainers
 AddPackage dialog # A tool to display dialog boxes from shell scripts
 AddPackage discord # All-in-one voice and text chat for gamers
+AddPackage dmidecode # Desktop Management Interface table related utilities
 AddPackage dos2unix # Text file format converter
 AddPackage easyeffects # Audio Effects for Pipewire applications
 AddPackage ecryptfs-utils # Enterprise-class stacked cryptographic filesystem for Linux
+AddPackage ed # A POSIX-compliant line-oriented text editor
 AddPackage electrum # Lightweight Bitcoin wallet
 AddPackage elementary-icon-theme # Named, vector icons for elementary OS
 AddPackage elinks # An advanced and well-established feature-rich text mode web browser.
@@ -132,6 +134,7 @@ AddPackage julia # High-level, high-performance, dynamic programming language
 AddPackage libpam-google-authenticator # PAM module for google authenticator app
 AddPackage libpcap # A system-independent interface for user-level packet capture
 AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
+AddPackage libretro-core-info # Libretro core info files
 AddPackage libtool # A generic library support script
 AddPackage libva-utils # Intel VA-API Media Applications and Scripts for libva
 AddPackage libvdpau-va-gl # VDPAU driver with OpenGL/VAAPI backend
@@ -143,6 +146,7 @@ AddPackage man-pages # Linux man pages
 AddPackage mate-backgrounds # Background images and data for MATE
 AddPackage mold # A Modern Linker
 AddPackage mpv # a free, open source, and cross-platform media player
+AddPackage mpv-mpris # MPRIS plugin for mpv
 AddPackage namcap # A Pacman package analyzer
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
 AddPackage net-tools # Configuration tools for Linux networking
@@ -183,6 +187,8 @@ AddPackage qt5-wayland # Provides APIs for Wayland
 AddPackage qtpass # A multi-platform GUI for pass
 AddPackage realtime-privileges # Realtime privileges for users
 AddPackage rebuild-detector # Detects which packages need to be rebuilt
+AddPackage retroarch # Reference frontend for the libretro API
+AddPackage retroarch-assets-xmb # XMB menu assets for RetroArch
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage rpmextract # Script to convert or extract RPM archives (contains rpm2cpio)
 AddPackage rsync # A fast and versatile file copying tool for remote and local files
