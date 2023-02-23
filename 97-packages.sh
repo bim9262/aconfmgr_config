@@ -16,7 +16,6 @@ AddPackage --foreign grimshot # A helper for screenshots within sway.
 AddPackage --foreign libretro-beetle-psx-git # Sony PlayStation core
 AddPackage --foreign lssecret-git # utility to list all secret items in a secret service using libsecret
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
-# AddPackage --foreign obs-v4l2sink # v4l2 output for obs-studio
 AddPackage --foreign octoprint-venv # Web interface for 3D printers (venv installation type)
 AddPackage --foreign pacman-log-orphans-hook # hook to check whether there are any packages marked as unrequired (orphans) via pacman -Qttdq after every pacman run
 AddPackage --foreign pacmods # Tool to show changes to system config files
@@ -25,7 +24,6 @@ AddPackage --foreign paru # Feature packed AUR helper
 AddPackage --foreign pass-audit # A pass extension for auditing your password repository.
 AddPackage --foreign pass-tessen # fuzzy data selection and copy-paste from password store
 AddPackage --foreign pass-update # A pass extension that provides an easy flow for updating passwords.
-AddPackage --foreign plymouth-git # A graphical boot splash screen with kernel mode-setting support (Development version)
 AddPackage --foreign powerline-fonts-git # Patched fonts for Powerline users
 AddPackage --foreign processing # Programming environment for creating images, animations and interactions
 AddPackage --foreign pypy3-virtualenv # Virtual Python Environment builder for pypy
@@ -166,7 +164,6 @@ AddPackage openssh # SSH protocol implementation for remote login, command execu
 AddPackage openxr # An open standard for virtual reality and augmented reality platforms and devices
 AddPackage os-prober # Utility to detect other OSes on a set of drives
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
-AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
 AddPackage pastebinit # Send anything you want directly to a pastebin from the command line
 AddPackage patch # A utility to apply patch files to original sources
 AddPackage pavucontrol # PulseAudio Volume Control
@@ -223,6 +220,7 @@ AddPackage thunderbird # Standalone mail and news reader from mozilla.org
 AddPackage tmux # A terminal multiplexer
 AddPackage tree # A directory listing program displaying a depth indented list of files
 AddPackage ttf-font-awesome # Iconic font designed for Bootstrap
+AddPackage ttf-nerd-fonts-symbols-2048-em-mono # High number of extra glyphs from popular 'iconic fonts' (2048-em monospace)
 AddPackage upower # Abstraction for enumerating power devices, listening to device events and querying history and statistics
 AddPackage usbutils # A collection of USB tools to query connected USB devices
 AddPackage valgrind # Tool to help find memory-management problems in programs
@@ -241,7 +239,7 @@ AddPackage wpa_supplicant # A utility providing key negotiation for WPA wireless
 AddPackage xdg-user-dirs # Manage user directories like ~/Desktop and ~/Music
 AddPackage xorg-xhost # Server access control program for X
 AddPackage xournalpp # Handwriting notetaking software with PDF annotation support
-AddPackage youtube-dl # A command-line program to download videos from YouTube.com and a few more sites
+AddPackage yt-dlp # A youtube-dl fork with additional features and fixes
 AddPackage yubikey-manager # Python library and command line tool for configuring a YubiKey
 AddPackage yubikey-manager-qt # Cross-platform application for configuring any YubiKey over all USB transports
 AddPackage yubikey-personalization-gui # Yubico YubiKey Personalization GUI
@@ -256,4 +254,5 @@ if [[ "$HOSTNAME" == bmalyn-tower ]]; then
 
 elif [[ "$HOSTNAME" == bmalyn-yoga ]]; then
     AddPackage --foreign mkchromecast # Cast Audio/Video to your Google Cast and Sonos Devices
+    AddPackage --foreign plymouth-git # A graphical boot splash screen with kernel mode-setting support (Development version)
 fi

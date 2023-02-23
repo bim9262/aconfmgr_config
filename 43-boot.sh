@@ -8,7 +8,6 @@ AddPackage linux-firmware # Firmware files for Linux
 AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
 AddPackage linux-lts # The LTS Linux kernel and modules
 AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
-AddPackage v4l2loopback-dkms # v4l2-loopback device – module sources
 AddPackage virtualbox-host-dkms # VirtualBox Host kernel modules sources
 
 
@@ -90,5 +89,3 @@ EOF
 f=$(GetPackageOriginalFile mkinitcpio /etc/mkinitcpio.conf)
 set_variable "MODULES" "=" "$MODULES" "$f"
 set_variable "HOOKS" "=" "$HOOKS" "$f"
-
-CopyFile /etc/modprobe.d/v4l2loopback.conf

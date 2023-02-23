@@ -7,7 +7,6 @@ CopyFile /etc/udev/rules.d/51-garmin-usb.rules
 CopyFile /etc/udev/rules.d/60-cm-rgb.rules
 CopyFile /etc/zsh/zshenv
 
-
 GetPackageOriginalFile util-linux /etc/pam.d/login > /dev/null
 GetPackageOriginalFile shadow /etc/pam.d/passwd > /dev/null
 GetPackageOriginalFile openssh /etc/pam.d/sshd > /dev/null
@@ -37,17 +36,19 @@ set /files/etc/pam.d/sshd/04/argument no_increment_hotp
 save
 EOF
 
+f="$(GetPackageOriginalFile pam /etc/security/faillock.conf)"
+sed -ri "s/^# (deny)/\1/g" "$f"
+set_variable "deny" "=" "10" "$f"
+
 f="$(GetPackageOriginalFile pacman /etc/makepkg.conf)"
 sed -ri "s/^#(MAKEFLAGS)/\1/g" "$f"
 set_variable "MAKEFLAGS" "=" '"-j$(nproc)"' "$f"
 set_variable "INTEGRITY_CHECK" "=" "(sha256 sha512 b2)" "$f"
 
-
 f="$(GetPackageOriginalFile pacman /etc/pacman.conf)"
 sed -ri "s/^#(Color)/\1\nILoveCandy/g" "$f"
 sed -ri "s/^#(VerbosePkgLists|ParallelDownloads)/\1/g" "$f"
 sed -ri "s#(\[(core|extra|community)\])#\1\nInclude  = /etc/pacman.d/pacserve#g" "$f"
-
 
 cat >> "$(GetPackageOriginalFile openssh /etc/ssh/sshd_config)" <<EOF
 StreamLocalBindUnlink yes
@@ -65,8 +66,6 @@ sed -ri "s/^(--sort).*/\1 score/g" "$f"
 cat >> "$(GetPackageOriginalFile zeronet-git /etc/zeronet.conf)" <<EOF
 fileserver_port = $ZERONET_FILESERVER_PORT
 EOF
-
-
 
 # These are just the default files, that we don't modify
 GetPackageOriginalFile pambase /etc/pam.d/system-auth > /dev/null
