@@ -20,6 +20,7 @@ AddPackage --foreign octoprint-venv # Web interface for 3D printers (venv instal
 AddPackage --foreign pacman-log-orphans-hook # hook to check whether there are any packages marked as unrequired (orphans) via pacman -Qttdq after every pacman run
 AddPackage --foreign pacmods # Tool to show changes to system config files
 AddPackage --foreign pacserve # Easily share Pacman packages between computers. A replacement for PkgD.
+AddPackage --foreign pandoc-bin # Pandoc - executable only, without 750MB Haskell depends/makedepends
 AddPackage --foreign paru # Feature packed AUR helper
 AddPackage --foreign pass-audit # A pass extension for auditing your password repository.
 AddPackage --foreign pass-tessen # fuzzy data selection and copy-paste from password store
@@ -177,6 +178,7 @@ AddPackage playerctl # mpris media player controller and lib for spotify, vlc, a
 AddPackage powerline # Statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, tmux, IPython, Awesome, i3 and Qtile
 AddPackage pypy # A Python implementation written in Python, JIT enabled
 AddPackage python-pbr # Python Build Reasonableness
+AddPackage python-pre-commit # A framework for managing and maintaining multi-language pre-commit hooks
 AddPackage python-pylint # Analyzes Python code looking for bugs and signs of poor quality
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-xlrd # Library for developers to extract data from Excel spreadsheet files
@@ -221,6 +223,7 @@ AddPackage tmux # A terminal multiplexer
 AddPackage tree # A directory listing program displaying a depth indented list of files
 AddPackage ttf-font-awesome # Iconic font designed for Bootstrap
 AddPackage ttf-nerd-fonts-symbols-2048-em-mono # High number of extra glyphs from popular 'iconic fonts' (2048-em monospace)
+AddPackage typos # Source code spell checker
 AddPackage upower # Abstraction for enumerating power devices, listening to device events and querying history and statistics
 AddPackage usbutils # A collection of USB tools to query connected USB devices
 AddPackage valgrind # Tool to help find memory-management problems in programs
