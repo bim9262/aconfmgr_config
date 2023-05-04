@@ -28,11 +28,6 @@ AddPackage --foreign pass-update # A pass extension that provides an easy flow f
 AddPackage --foreign powerline-fonts-git # Patched fonts for Powerline users
 AddPackage --foreign processing # Programming environment for creating images, animations and interactions
 AddPackage --foreign pypy3-virtualenv # Virtual Python Environment builder for pypy
-AddPackage --foreign python311 # Major release 3.11 of the Python high-level programming language
-AddPackage --foreign python36 # Major release 3.6 of the Python high-level programming language
-AddPackage --foreign python37 # Major release 3.7 of the Python high-level programming language
-AddPackage --foreign python38 # Major release 3.8 of the Python high-level programming language
-AddPackage --foreign python39 # Major release 3.9 of the Python high-level programming language
 AddPackage --foreign reflector-mirrorlist-update # Use reflector to update mirrorlist when pacman-mirrorlist is updated
 AddPackage --foreign rslsync # Resilio Sync (ex:BitTorrent Sync) - automatically sync files via secure, distributed technology
 AddPackage --foreign sndcpy-bin # Android audio forwarding (scrcpy, but for audio)
