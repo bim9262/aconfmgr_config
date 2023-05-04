@@ -18,6 +18,6 @@ elif [[ "$HOSTNAME" == bmalyn-yoga ]]; then
     GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
     GRUB_ENABLE_CRYPTODISK=y
     MODULES="(i915)"
-    HOOKS="(base udev plymouth autodetect modconf keyboard keymap block plymouth-encrypt lvm2 resume filesystems fsck)"
+    HOOKS="(base udev plymouth autodetect modconf keyboard keymap block encrypt lvm2 resume filesystems fsck)"
     ZERONET_FILESERVER_PORT=34622
 fi
