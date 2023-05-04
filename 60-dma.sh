@@ -2,11 +2,7 @@ AddPackage --foreign dma # DragonFly BSD mail transport agent
 
 local smtp_server=smtp.gmail.com
 
-cat >> "$(CreateFile /etc/dma/auth.conf)" <<EOF
-# \$DragonFly: src/etc/dma/auth.conf,v 1.1 2008/02/02 18:24:00 matthias Exp $
-#
-# SMTP authentication entries (currently AUTH LOGIN only)
-# Format: user|my.smarthost.example.com:password
+cat >> "$(GetPackageOriginalFile dma /etc/dma/auth.conf)" <<EOF
 #
 $EMAIL|$smtp_server:$EMAIL_PASSWORD
 EOF
