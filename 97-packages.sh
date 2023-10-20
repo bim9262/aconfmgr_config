@@ -8,11 +8,13 @@ AddPackage --foreign castlequest-git # Text-based adventure game set in a remote
 AddPackage --foreign cura-bin # State-of-the-art slicer app to prepare your 3D models for your 3D printer
 AddPackage --foreign diction # Diction identifies wordy and commonly misused phrases.
 AddPackage --foreign dropbox # A free service that lets you bring your photos, docs, and videos anywhere and share them easily.
+AddPackage --foreign exif # A small command-line utility to show EXIF information hidden in JPEG files.
 AddPackage --foreign extramaus # workaround to always show mouse cursor under x11
 AddPackage --foreign fpaste # A cli frontend for the fpaste.org pastebin
 AddPackage --foreign git-gone # Prune stale local Git branches
 AddPackage --foreign google-chrome # The popular and trusted web browser by Google (Stable Channel)
 AddPackage --foreign grimshot # A helper for screenshots within sway.
+AddPackage --foreign koreader-bin # An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices
 AddPackage --foreign libretro-beetle-psx-git # Sony PlayStation core
 AddPackage --foreign lssecret-git # utility to list all secret items in a secret service using libsecret
 AddPackage --foreign minecraft-launcher # Official Minecraft Launcher
@@ -27,11 +29,10 @@ AddPackage --foreign pass-tessen # fuzzy data selection and copy-paste from pass
 AddPackage --foreign pass-update # A pass extension that provides an easy flow for updating passwords.
 AddPackage --foreign powerline-fonts-git # Patched fonts for Powerline users
 AddPackage --foreign processing # Programming environment for creating images, animations and interactions
-AddPackage --foreign pypy3-virtualenv # Virtual Python Environment builder for pypy
 AddPackage --foreign reflector-mirrorlist-update # Use reflector to update mirrorlist when pacman-mirrorlist is updated
 AddPackage --foreign rslsync # Resilio Sync (ex:BitTorrent Sync) - automatically sync files via secure, distributed technology
-AddPackage --foreign sndcpy-bin # Android audio forwarding (scrcpy, but for audio)
 AddPackage --foreign stress-ng # Software to stress test a computer system in various selectable ways
+AddPackage --foreign synology-assistant # Synology Assistant is a desktop utility that searches for Synology servers within the local area network. It allows you to search and connect to your Synology server or set up Wake on LAN (WOL).
 AddPackage --foreign texlive-latexindent-meta # Meta package to use latexindent
 AddPackage --foreign ttf-font-awesome-4 # 100% free version of font awesome.
 AddPackage --foreign ttf-roboto-flex # Upgrades Roboto to become a more powerful typeface system
@@ -40,11 +41,8 @@ AddPackage --foreign virtualbox-ext-oracle # Oracle VM VirtualBox Extension Pack
 AddPackage --foreign visual-studio-code-bin # Visual Studio Code (vscode): Editor for building and debugging modern web and cloud applications (official binary version)
 AddPackage --foreign wlrobs # An obs-studio plugin that allows you to screen capture on wlroots based wayland compositors
 AddPackage --foreign xdg-ninja-git # A shell script which checks your $HOME for unwanted files and directories.
-AddPackage --foreign xorg-xwayland-hidpi-xprop # run X clients under wayland, with !733 HiDPI patch
 AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper written in go.
-AddPackage --foreign ytop # A TUI system monitor written in Rust
-AddPackage --foreign zeronet-git # Decentralized websites using Bitcoin crypto and the BitTorrent network.
-
+AddPackage --foreign zeronet-conservancy # Decentralized websites using Bitcoin crypto and the BitTorrent network.
 AddPackage 0ad # Cross-platform, 3D and historically-based real-time strategy game
 AddPackage alacritty # A cross-platform, GPU-accelerated terminal emulator
 AddPackage alsa-utils # Advanced Linux Sound Architecture - Utilities
@@ -52,6 +50,7 @@ AddPackage android-file-transfer # Android MTP client with minimalistic UI
 AddPackage android-tools # Android platform tools
 AddPackage android-udev # Udev rules to connect Android devices to your linux box
 AddPackage arch-audit # A utility like pkg-audit based on Arch Security Team data
+AddPackage asp # Arch Linux build source file management tool
 AddPackage aspell-en # English dictionary for aspell
 AddPackage atril # MATE document viewer
 AddPackage audacity # A program that lets you manipulate digital audio waveforms
@@ -64,12 +63,14 @@ AddPackage bat # Cat clone with syntax highlighting and git integration
 AddPackage bind # A complete, highly portable implementation of the DNS protocol
 AddPackage binutils # A set of programs to assemble and manipulate binary and object files
 AddPackage bison # The GNU general-purpose parser generator
+AddPackage blas-openblas # An optimized BLAS library based on GotoBLAS2 1.13 BSD (Provides BLAS/CBLAS/LAPACK/LAPACKE system-wide)
 AddPackage blender # A fully integrated 3D graphics creation suite
 AddPackage brightnessctl # Lightweight brightness control tool
 AddPackage browserpass # Native host app for Browserpass, browser extension for zx2c4's pass (password manager)
 AddPackage btfs # A bittorrent filesystem based on FUSE
 AddPackage ca-certificates-mozilla # Mozilla's set of trusted CA certificates
 AddPackage caja # File manager for the MATE desktop
+AddPackage calibre # Ebook management application
 AddPackage chezmoi # Manage your dotfiles across multiple machines
 AddPackage coreutils # The basic file, shell and text manipulation utilities of the GNU operating system
 AddPackage debugedit # Tool to mangle source locations in .debug files
@@ -109,6 +110,7 @@ AddPackage groff # GNU troff text-formatting system
 AddPackage gst-plugin-pipewire # Multimedia graph framework - pipewire plugin
 AddPackage gtkspell # Provides word-processor-style highlighting and replacement of misspelled words in a GtkTextView widget
 AddPackage gvfs-mtp # Virtual filesystem implementation for GIO (MTP backend; Android, media player)
+AddPackage helix # A post-modern modal text editor
 AddPackage helvum # GTK patchbay for PipeWire
 AddPackage hspell # Hebrew spell-checker
 AddPackage htop # Interactive process viewer
@@ -125,6 +127,7 @@ AddPackage jq # Command-line JSON processor
 AddPackage jre-openjdk # OpenJDK Java 19 full runtime environment
 AddPackage jre-openjdk-headless # OpenJDK Java 19 headless runtime environment
 AddPackage julia # High-level, high-performance, dynamic programming language
+AddPackage lapce # Lightning-fast and Powerful Code Editor
 AddPackage libpam-google-authenticator # PAM module for google authenticator app
 AddPackage libpcap # A system-independent interface for user-level packet capture
 AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
@@ -141,11 +144,14 @@ AddPackage mate-backgrounds # Background images and data for MATE
 AddPackage mold # A Modern Linker
 AddPackage mpv # a free, open source, and cross-platform media player
 AddPackage mpv-mpris # MPRIS plugin for mpv
+AddPackage mypy # Optional static typing for Python 2 and 3 (PEP484)
 AddPackage namcap # A Pacman package analyzer
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
+AddPackage net-snmp # A suite of applications used to implement SNMP v1, SNMP v2c and SNMP v3 using both IPv4 and IPv6
 AddPackage net-tools # Configuration tools for Linux networking
 AddPackage ngrep # A grep-like utility that allows you to search for network packets on an interface.
 AddPackage nmap # Utility for network discovery and security auditing
+AddPackage notmuch # Notmuch is not much of an email program
 AddPackage noto-fonts-cjk # Google Noto CJK fonts
 AddPackage noto-fonts-emoji # Google Noto emoji fonts
 AddPackage noto-fonts-extra # Google Noto TTF fonts - additional variants
@@ -171,9 +177,9 @@ AddPackage pipewire-pulse # Low-latency audio/video router and processor - Pulse
 AddPackage pkgconf # Package compiler and linker metadata toolkit
 AddPackage playerctl # mpris media player controller and lib for spotify, vlc, audacious, bmp, xmms2, and others.
 AddPackage powerline # Statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, tmux, IPython, Awesome, i3 and Qtile
+AddPackage pre-commit # A framework for managing and maintaining multi-language pre-commit hooks
 AddPackage pypy # A Python implementation written in Python, JIT enabled
 AddPackage python-pbr # Python Build Reasonableness
-AddPackage python-pre-commit # A framework for managing and maintaining multi-language pre-commit hooks
 AddPackage python-pylint # Analyzes Python code looking for bugs and signs of poor quality
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-xlrd # Library for developers to extract data from Excel spreadsheet files
@@ -193,7 +199,6 @@ AddPackage sagetex # Allows to embed code, results of computations, and plots fr
 AddPackage sccache # Shared compilation cache
 AddPackage scrcpy # Display and control your Android device
 AddPackage seahorse # GNOME application for managing PGP keys.
-AddPackage signal-desktop # Signal Private Messenger for Linux
 AddPackage sl # Steam Locomotive runs across your terminal when you type "sl" as you meant to type "ls"
 AddPackage smartmontools # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
 AddPackage sqlitebrowser # SQLite Database browser is a light GUI editor for SQLite databases, built on top of Qt
@@ -201,23 +206,30 @@ AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage sudo # Give certain users the ability to run some commands as root
 AddPackage tcpdump # Powerful command-line packet analyzer
 AddPackage texinfo # GNU documentation system for on-line information and printed output
+AddPackage texlive-basic # TeX Live - Essential programs and files
 AddPackage texlive-bibtexextra # TeX Live - Additional BibTeX styles and bibliography databases
-AddPackage texlive-core # TeX Live core distribution
+AddPackage texlive-binextra # TeX Live - TeX auxiliary programs
+AddPackage texlive-context # TeX Live - ConTeXt and packages
 AddPackage texlive-fontsextra # TeX Live - all sorts of extra fonts
+AddPackage texlive-fontutils # TeX Live - Graphics and font utilities
 AddPackage texlive-formatsextra # TeX Live - collection of extra TeX 'formats'
 AddPackage texlive-games # TeX Live - Setups for typesetting various board games, including chess
 AddPackage texlive-humanities # TeX Live - LaTeX packages for law, linguistics, social sciences, and humanities
 AddPackage texlive-latexextra # TeX Live - Large collection of add-on packages for LaTeX
+AddPackage texlive-luatex # TeX Live - LuaTeX packages
+AddPackage texlive-mathscience # TeX Live - Mathematics, natural sciences, computer science packages
+AddPackage texlive-metapost # TeX Live - MetaPost and Metafont packages
 AddPackage texlive-music # TeX Live - Music typesetting packages
 AddPackage texlive-pictures # TeX Live - Packages for drawings graphics
 AddPackage texlive-pstricks # TeX Live - Additional PSTricks packages
 AddPackage texlive-publishers # TeX Live - LaTeX classes and packages for specific publishers
-AddPackage texlive-science # TeX Live - Typesetting for mathematics, natural and computer sciences
+AddPackage texlive-xetex # TeX Live - XeTeX and packages
 AddPackage thunderbird # Standalone mail and news reader from mozilla.org
 AddPackage tmux # A terminal multiplexer
 AddPackage tree # A directory listing program displaying a depth indented list of files
 AddPackage ttf-font-awesome # Iconic font designed for Bootstrap
-AddPackage ttf-nerd-fonts-symbols-2048-em-mono # High number of extra glyphs from popular 'iconic fonts' (2048-em monospace)
+AddPackage ttf-nerd-fonts-symbols-mono # High number of extra glyphs from popular 'iconic fonts' (monospace)
+AddPackage typescript # JavaScript with syntax for types
 AddPackage typos # Source code spell checker
 AddPackage upower # Abstraction for enumerating power devices, listening to device events and querying history and statistics
 AddPackage usbutils # A collection of USB tools to query connected USB devices

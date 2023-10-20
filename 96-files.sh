@@ -22,7 +22,7 @@ set /files/etc/pam.d/login/02/control optional
 set /files/etc/pam.d/login/02/module pam_gnome_keyring.so
 set /files/etc/pam.d/login/02/argument auto_start
 
-ins 03 after "/files/etc/pam.d/passwd/*[type = 'password'][module = 'pam_unix.so']"
+ins 03 after "/files/etc/pam.d/passwd/*[type = 'password'][module = 'system-auth']"
 set /files/etc/pam.d/passwd/03/type password
 set /files/etc/pam.d/passwd/03/control optional
 set /files/etc/pam.d/passwd/03/module pam_gnome_keyring.so
@@ -46,9 +46,10 @@ set_variable "MAKEFLAGS" "=" '"-j$(nproc)"' "$f"
 set_variable "INTEGRITY_CHECK" "=" "(sha256 sha512 b2)" "$f"
 
 f="$(GetPackageOriginalFile pacman /etc/pacman.conf)"
-sed -ri "s/^#(Color)/\1\nILoveCandy/g" "$f"
+sed -ri "s/^#(Color)/\1\nILoveCandy\nDisableDownloadTimeout/g" "$f"
 sed -ri "s/^#(VerbosePkgLists|ParallelDownloads)/\1/g" "$f"
-sed -ri "s#(\[(core|extra|community)\])#\1\nInclude  = /etc/pacman.d/pacserve#g" "$f"
+sed -ri "s#(\[core\])#[sway-hidpi]\nServer = https://sway-hidpi.bmalyn.com/\n\n\1#g" "$f"
+sed -ri "s#(\[(core|extra)\])#\1\nInclude  = /etc/pacman.d/pacserve#g" "$f"
 
 cat >> "$(GetPackageOriginalFile openssh /etc/ssh/sshd_config)" <<EOF
 StreamLocalBindUnlink yes
@@ -63,7 +64,7 @@ f="$(GetPackageOriginalFile reflector /etc/xdg/reflector/reflector.conf)"
 sed -ri "s/^# (--country).*/\1 US/g" "$f"
 sed -ri "s/^(--sort).*/\1 score/g" "$f"
 
-cat >> "$(GetPackageOriginalFile zeronet-git /etc/zeronet.conf)" <<EOF
+cat >> "$(GetPackageOriginalFile zeronet-conservancy /etc/zeronet.conf)" <<EOF
 fileserver_port = $ZERONET_FILESERVER_PORT
 EOF
 

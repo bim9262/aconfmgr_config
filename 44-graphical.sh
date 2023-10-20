@@ -1,20 +1,23 @@
 AddPackage --foreign bemoji-git # Emoji picker that remembers your favorites.
 AddPackage --foreign i3status-rust-git # Very resourcefriendly and feature-rich replacement for i3status to use with bar programs (like i3bar and swaybar), written in pure Rust
-AddPackage --foreign sway-i3-style-fullscreen-git # Tiling Wayland compositor and replacement for the i3 window manager with patch for i3 style fullscreen
 AddPackage --foreign swaync-git # A simple notificaion daemon with a GTK panel for checking previous notifications like other DEs
-AddPackage --foreign wlroots-hidpi-xprop-git # Modular Wayland compositor library (git version, with patches)
-AddPackage --foreign xdg-desktop-portal-wlr-git # xdg-desktop-portal backend for wlroots
+
 AddPackage bemenu # Dynamic menu library and client program inspired by dmenu
 AddPackage grim # Screenshot utility for Wayland
 AddPackage pinentry-bemenu # Pinentry based on bemenu
 AddPackage slurp # Select a region in a Wayland compositor
+AddPackage sway # Tiling Wayland compositor and replacement for the i3 window manager
+AddPackage swaybg # Wallpaper tool for Wayland compositors
 AddPackage swayidle # Idle management daemon for Wayland
 AddPackage swaylock # Screen locker for Wayland
 AddPackage wayland-protocols # Specifications of extended Wayland protocols
 AddPackage wl-clipboard # Command-line copy/paste utilities for Wayland
 AddPackage wtype # xdotool type for wayland
 AddPackage xclip # Command line interface to the X11 clipboard
+AddPackage xdg-desktop-portal-wlr # xdg-desktop-portal backend for wlroots
 AddPackage xorg-xrdb # X server resource database utility
+AddPackage xorg-xwayland # run X clients under wayland
+AddPackage xorgproto # combined X.Org X11 Protocol headers
 
 if [[ "$HOSTNAME" == bmalyn-tower ]]; then
 

@@ -1,4 +1,4 @@
-AddPackage --foreign dma # DragonFly BSD mail transport agent
+AddPackage dma # DragonFly BSD mail transport agent
 
 local smtp_server=smtp.gmail.com
 

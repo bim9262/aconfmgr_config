@@ -18,4 +18,4 @@ SystemdEnable pcsclite /usr/lib/systemd/system/pcscd.socket
 SystemdEnable smartmontools /usr/lib/systemd/system/smartd.service
 SystemdEnable systemd /usr/lib/systemd/system/remote-fs.target
 SystemdEnable upower /usr/lib/systemd/system/upower.service
-SystemdEnable zeronet-git /usr/lib/systemd/system/zeronet.service
+SystemdEnable zeronet-conservancy /usr/lib/systemd/system/zeronet.service
