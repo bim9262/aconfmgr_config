@@ -43,6 +43,7 @@ AddPackage --foreign wlrobs # An obs-studio plugin that allows you to screen cap
 AddPackage --foreign xdg-ninja-git # A shell script which checks your $HOME for unwanted files and directories.
 AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper written in go.
 AddPackage --foreign zeronet-conservancy # Decentralized websites using Bitcoin crypto and the BitTorrent network.
+
 AddPackage 0ad # Cross-platform, 3D and historically-based real-time strategy game
 AddPackage alacritty # A cross-platform, GPU-accelerated terminal emulator
 AddPackage alsa-utils # Advanced Linux Sound Architecture - Utilities
@@ -72,6 +73,7 @@ AddPackage ca-certificates-mozilla # Mozilla's set of trusted CA certificates
 AddPackage caja # File manager for the MATE desktop
 AddPackage calibre # Ebook management application
 AddPackage chezmoi # Manage your dotfiles across multiple machines
+AddPackage clang # C language family frontend for LLVM
 AddPackage coreutils # The basic file, shell and text manipulation utilities of the GNU operating system
 AddPackage debugedit # Tool to mangle source locations in .debug files
 AddPackage debuginfod # Handle ELF object files and DWARF debugging information (debuginfod)
